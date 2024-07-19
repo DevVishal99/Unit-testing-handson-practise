@@ -12,7 +12,7 @@ describe('customer details', () => {
   it('should render the component to dom',  () => {
     const header = element.shadowRoot.querySelector('h2');
     expect(header.innerText).to.equal('Customer Details');
-    expect(element);
+    expect(element).to.be.accessible();
   });
   it('should call _toEmidetails when clicked on back button', async () => {
     const backBtn = element.shadowRoot.querySelector('.backbg-btn-color');

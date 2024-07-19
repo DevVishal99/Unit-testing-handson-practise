@@ -9,7 +9,7 @@ describe('Loan EMI details', () => {
     element = await fixture(html`<loanemi-details></loanemi-details>`);
   });
   it('should render loanemi detailscomponent to the dom', async () => {
-    expect(element).to.be.accessible;
+    expect(element).to.be.accessible();
   });
   it('should call toBasicDetails when clicked on cancel button', async () => {
     const cancelBtn = element.shadowRoot.querySelector('.cancel-btn');
